@@ -3,6 +3,14 @@
     background: #2f4357;
     margin-top: 20px;
 }
-.carousel .item img{
-    margin: 0 auto; /* Align slide image horizontally center */
+.carousel-inner>.item>img{
+    margin: 0 auto ;/* Align slide image horizontally center */
+   }
+   .carousel-inner>.active{
+    margin: 0 auto ;/* Align slide image horizontally center */
+   }
+.courses{
+	display: flex;
+	flex-wrap: wrap;
+	margin:10px;
 }

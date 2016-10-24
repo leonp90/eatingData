@@ -3,17 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Angular Food</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="stylesheet" href="css/main.css">
 
-	<style>
-		.active {
-			background: black !important;
-		}
-		.nav {
-			margin:0;
-		}
-	</style>
+
 </head>
 <body>
 
@@ -24,7 +19,7 @@
 				<div class="container">
 					<a class="navbar-brand" href="#/">JSON kitchen</a>
 					<ul class="nav navbar-nav">
-						<li ng-class="{ active: activetab == 'Home'}">
+						<li ng-class="{ active: activetab == 'home'}">
 							<a href="#/">Home</a>
 						
 						<li ng-class="{ active: activetab == 'About'}">
@@ -63,12 +58,11 @@
 		</div>
 	</footer>
 
-	<script src="https://opensource.keycdn.com/angularjs/1.5.8/angular.min.js "></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
-
-	<script src="app.js"></script>
-	<script src="service.js"></script>
-	<script src="controller.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/service.js"></script>
 </body>
 </html>
 
