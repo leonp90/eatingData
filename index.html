@@ -30,7 +30,7 @@
 						</li>
 
 
-						<form ng-submit = "getRecipe($event)" class="form-inline">
+						<form ng-controller = "searchController" ng-submit = "getRecipe($event)" class="form-inline">
 							 <div class="form-group">
 							   <label for="exampleInputName2">Hungry ?</label>
 							   <input ng-model ="foodQuery" type="text" class="form-control" id="exampleInputName2" placeholder="Tomato Spaguetti">
