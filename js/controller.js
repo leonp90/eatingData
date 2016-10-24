@@ -1,7 +1,13 @@
 angular.module('myApp')
-	// .controller('homeController', function($scope){
-
-	// })
+	.controller('homeController', function($scope, foodService){
+			$scope.getRandom=function(){
+				foodService.getRandom()
+					.then(function(response){
+						console.log(response);
+				})
+		}
+		$scope.getRandom();
+})
 
 	.controller('searchController', function($scope,$rootScope,foodService){
 		$scope.getRecipe=function(e){
@@ -25,10 +31,6 @@ angular.module('myApp')
 		
 
 	// })
-	// 	$scope.getRandom=function(){
-	// 		foodService.getRandom()
-	// 			.then(function(response){
-	// 				console.log(response);
-	// 			})
+	// 	
 	// 	}
 	// })
