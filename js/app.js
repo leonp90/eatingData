@@ -14,10 +14,8 @@ angular.module('myApp', ['ngRoute'])
 				templateUrl: 'views/contact.html',
 				controller: 'contactController'
 			})
-			.when('/search', {
-				templateUrl: 'views/search.html',
-				controller: 'searchController'
-			})
+
+			
 			.otherwise({redirectTo: '/'});
 			
 
