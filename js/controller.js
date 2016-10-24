@@ -14,7 +14,7 @@ angular.module('myApp')
 	// .controller('searchController', function($scope){
 		
 	// })
-	// .controller('randomController', function($scope){
+	// .controller('homeController', function($scope){
 	// 	$scope.getRandom=function(){
 	// 		foodService.getRandom()
 	// 			.then(function(response){
