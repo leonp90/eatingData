@@ -11,7 +11,14 @@ angular.module('myApp')
 	.controller('contactController', function($scope){
 		
 	})
-	.controller('searchController', function($scope){
+	.controller('searchController', function($scope,$rootScope,foodService){
+		$scope.getRecipe = function(e){
+		e.preventDefault();
+		foodService.getNavSearch($scope.foodQuery)
+			.then(function(response){
+				console.log(response);
+			})
+		}
 		
 	})
 	.controller('randomController', function($scope){
