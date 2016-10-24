@@ -1,5 +1,18 @@
 angular.module('myApp')
-	.controller('homeController', function($scope){
+	// .controller('homeController', function($scope){
+
+	// })
+
+	.controller('searchController', function($scope,$rootScope,foodService){
+		$scope.getRecipe=function(e){
+			e.preventDefault();
+			foodService.getNavSearch($scope.foodQuery)
+			.then(function (response){
+				console.log(response.data);
+
+			})
+
+		}
 
 	})
 	// .controller('aboutController', function($scope){
@@ -10,11 +23,8 @@ angular.module('myApp')
 	// })
 	// .controller('contactController', function($scope){
 		
+
 	// })
-	// .controller('searchController', function($scope){
-		
-	// })
-	// .controller('homeController', function($scope){
 	// 	$scope.getRandom=function(){
 	// 		foodService.getRandom()
 	// 			.then(function(response){

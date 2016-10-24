@@ -4,7 +4,7 @@ angular.module('myApp', ['ngRoute'])
 		$routeProvider
 			.when('/', {
 				templateUrl: 'views/home.html',
-				controller: 'homeController'
+				// controller: 'homeController'
 			})
 			.when('/about', {
 				templateUrl: 'views/about.html',
@@ -14,10 +14,8 @@ angular.module('myApp', ['ngRoute'])
 				templateUrl: 'views/contact.html',
 				controller: 'contactController'
 			})
-			.when('/search', {
-				templateUrl: 'views/search.html',
-				controller: 'searchController'
-			})
+
+			
 			.otherwise({redirectTo: '/'});
 			
 

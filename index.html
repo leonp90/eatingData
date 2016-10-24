@@ -29,6 +29,15 @@
 							<a href="#/contact">Contact</a>
 						</li>
 
+
+						<form ng-controller = "searchController" ng-submit = "getRecipe($event)" class="form-inline">
+							 <div class="form-group">
+							   <label for="exampleInputName2">Hungry ?</label>
+							   <input ng-model ="foodQuery" type="text" class="form-control" id="exampleInputName2" placeholder="Tomato Spaguetti">
+							 </div>
+							 <button type="submit" class="btn btn-default">Bake a search</button>
+						</form>
+
 					</ul>
 				</div>
 			</nav>
@@ -56,3 +65,4 @@
 	<script src="js/service.js"></script>
 </body>
 </html>
+
