@@ -10,11 +10,20 @@
     margin: 0 auto ;/* Align slide image horizontally center */
    }
 .courses{
-	display: flex;
+/*	display: flex;
 	flex-wrap: wrap;
-	margin:10px;
+	margin:10px;*/
+  max-width: 1140px;
+/*  margin: 30px;*/
+display: flex;
+}
+.courses div{
+  margin: 30px;
 }
 
-.thumbnail{
-	margin: 10px;
+.img-responsive {
+  margin: 0 auto;
+}
+.img-rounded {
+  border-radius: 50%;
 }
