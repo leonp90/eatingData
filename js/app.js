@@ -19,4 +19,6 @@ angular.module('myApp', ['ngRoute'])
 				controller: 'searchController'
 			})
 			.otherwise({redirectTo: '/'});
+			
+
 	})
