@@ -18,4 +18,5 @@ angular.module('myApp', ['ngRoute'])
 				templateUrl: 'views/search.html',
 				controller: 'searchController'
 			})
+			.otherwise({redirectTo: '/'});
 	})
