@@ -1,7 +1,10 @@
-<h1>{{ title }}</h1>
+<h2>{{title}}</h2>
+<div class="row rowA">
+    <div class="col-xs-2 moviesCont" ng-repeat="recipe in recipes">
+    
+        <img class="img-responsive" src="{{recipe.image_url}}" alt="">
+        <h3>{{recipe.title}}</h3>
+        <h4><small>Ver detalle{{recipe.url_details}}</small></h4>    
+    </div>
 
-<p>-------</p>
-<ul>
-<li ng-repeat="recipe in recipes"><span>-----</span>{{recipe.title}}</li>
-</ul>
-<p>-------</p>
+</div>
