@@ -23,6 +23,9 @@ display: flex;
 
 .img-responsive {
   margin: 0 auto;
+  max-height: 100px%;
+    max-width: 100px%;
+
 }
 .img-rounded {
   border-radius: 50%;
