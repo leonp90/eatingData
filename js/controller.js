@@ -40,12 +40,9 @@ angular.module('myApp')
 
 		})
 
-<<<<<<< HEAD
-	})
 
 
-=======
->>>>>>> bc6cc74d592009e4ae9baa5e7dbac142931c38ab
+
 	// .controller('aboutController', function($scope){
 
 	// })

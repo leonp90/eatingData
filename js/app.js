@@ -1,4 +1,4 @@
-angular.module('myApp', ['ui.scrollpoint', 'ngRoute'])
+angular.module('myApp', ['ngRoute'])
 	.config( function($routeProvider){
 
 		$routeProvider
