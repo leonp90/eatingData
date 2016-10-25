@@ -8,7 +8,7 @@ angular.module('myApp')
 			e.preventDefault();
 			foodService.getNavSearch($scope.foodQuery)
 			.then(function (response){
-				console.log(response.data);
+				console.log(response.data[0].title);
 
 			})
 
