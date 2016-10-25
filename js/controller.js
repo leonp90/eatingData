@@ -1,27 +1,27 @@
 angular.module('myApp')
 .controller('homeController', function($scope, foodService){
         var random = Math.floor(Math.random() * (30 - 1) + 1);
-            $scope.getRandom=function(){
-                //debugger;
-                foodService.getRandom()
-                    .then(function(response){
-                        $scope.recipeTitle = response.data[random].title;
-                        $scope.recipeImg = response.data[random].image_url;
-                        console.log(random);
-                        console.log(response.data);
-                        
-                });
-        };
-        $scope.getRandom();
-        $scope.getID = function(){
-				foodService.getDescription($scope.recipeID)
+        var recipeID= "";
+        foodService.getRandom()
+            .then(function(response){
+                $scope.recipeTitle = response.data[random].title;
+                $scope.recipeImg = response.data[random].image_url;
+                recipeID += response.data[random].url_details;
+                $scope.getID();
+            });
+
+
+        $scope.getID = function() {
+        	console.log(recipeID);	
+			foodService.getDescription(recipeID)
 				.then(function(response){
-					console.log(response);
+					console.log(response.data.recipe.description_text);
 				});
-		};
+		}
+
+
+		
 })
-// 	var random = Math.floor(Math.random() * (30 - 1) + 1);
-// 	$scope.getRandom=function(){
 
 
 	.controller('searchController', function($scope,$rootScope,foodService){
