@@ -1,4 +1,12 @@
+.navbar-fixed-top {
+    position:absolute;
+    top:100px;
+}
 
+.navbar-fixed-top.ui-scrollfix {
+   position: fixed;
+   top:0;
+}
 .carousel{
     background: #2f4357;
     margin-top: 20px;
@@ -27,3 +35,19 @@ display: flex;
 .img-rounded {
   border-radius: 50%;
 }
+  body {
+      position: relative !important;
+  }
+  .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px !important;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative !important;
+     top: 50px !important;
+  }
