@@ -1,17 +1,28 @@
 angular.module('myApp')
-	.controller('homeController', function($scope, foodService){
-			$scope.getRandom=function(){
-				var random = Math.floor(Math.random() * (30 - 1) + 1);
-				foodService.getRandom()
-					.then(function(response){
-						$scope.recipeTitle = response.data[random].title
-						$scope.recipeImg = response.data[random].image_url
-						console.log(random);
-						console.log(response.data);
-				})
-		}
-		$scope.getRandom();
+.controller('homeController', function($scope, foodService){
+        var random = Math.floor(Math.random() * (30 - 1) + 1);
+            $scope.getRandom=function(){
+                //debugger;
+                foodService.getRandom()
+                    .then(function(response){
+                        $scope.recipeTitle = response.data[random].title;
+                        $scope.recipeImg = response.data[random].image_url;
+                        console.log(random);
+                        console.log(response.data);
+                        
+                });
+        };
+        $scope.getRandom();
+        $scope.getID = function(){
+				foodService.getDescription($scope.recipeID)
+				.then(function(response){
+					console.log(response);
+				});
+		};
 })
+// 	var random = Math.floor(Math.random() * (30 - 1) + 1);
+// 	$scope.getRandom=function(){
+
 
 	.controller('searchController', function($scope,$rootScope,foodService){
 		$scope.getRecipe=function(e){
@@ -20,13 +31,19 @@ angular.module('myApp')
 				.then(function (response){
 					$rootScope.recipes=response.data;
 				})
+
 		}
 	})
 
 	.controller('searchResults', function($scope,$rootScope,foodService){
 
 
-	})
+
+			}
+
+		})
+
+
 	// .controller('aboutController', function($scope){
 
 	// })
