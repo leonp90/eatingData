@@ -15,6 +15,11 @@ angular.module('myApp', ['ngRoute'])
 				controller: 'contactController'
 			})
 
+			.when('/search', {
+				templateUrl:'views/search.html',
+				controller:'searchController'
+			})
+
 			
 			.otherwise({redirectTo: '/'});
 			

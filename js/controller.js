@@ -23,35 +23,18 @@ angular.module('myApp')
 // 	var random = Math.floor(Math.random() * (30 - 1) + 1);
 // 	$scope.getRandom=function(){
 
-// 		foodService.getRandom()
-// 		.then(function(response){
-// 			$scope.recipeTitle = response.data[random].title
-// 			$scope.recipeImg = response.data[random].image_url
-// 			$scope.recipeID = response.data[random].url_details
-// 			console.log($scope.recipeID);
-// 			console.log(random);
-// 			console.log(response.data);
-// 			$scope.getID = function(){
-// 				foodService.getDescription($scope.recipeID)
-// 				.then(function(response){
-// 					console.log(response);
-// 				});
-// 			};
-// 		})
 
-// }
-// 		$scope.getRandom();
-// 		$scope.getID();
-// 	}
-
-		.controller('searchController', function($scope,$rootScope,foodService){
-			$scope.getRecipe=function(e){
-				e.preventDefault();
-				foodService.getNavSearch($scope.foodQuery)
+	.controller('searchController', function($scope,$rootScope,foodService){
+		$scope.title = "AAAA"
+		$scope.getRecipe=function(e){
+			e.preventDefault();
+			foodService.getNavSearch($scope.foodQuery)
 				.then(function (response){
-				// console.log(response.data);
+					console.log(response);
+					$scope.recipes=response.data;
+					console.log($scope.recipes);
 
-			})
+				})
 
 			}
 
