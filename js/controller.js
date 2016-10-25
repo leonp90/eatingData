@@ -14,13 +14,16 @@ angular.module('myApp')
 })
 
 	.controller('searchController', function($scope,$rootScope,foodService){
+		$scope.title = "AAAA"
 		$scope.getRecipe=function(e){
 			e.preventDefault();
 			foodService.getNavSearch($scope.foodQuery)
-			.then(function (response){
-				// console.log(response.data);
+				.then(function (response){
+					console.log(response);
+					$scope.recipes=response.data;
+					console.log($scope.recipes);
 
-			})
+				})
 
 		}
 
