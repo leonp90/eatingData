@@ -1,7 +1,17 @@
 angular.module('myApp')
-	// .controller('homeController', function($scope){
-
-	// })
+	.controller('homeController', function($scope, foodService){
+			$scope.getRandom=function(){
+				var random = Math.floor(Math.random() * (30 - 1) + 1);
+				foodService.getRandom()
+					.then(function(response){
+						$scope.recipeTitle = response.data[random].title
+						$scope.recipeImg = response.data[random].image_url
+						console.log(random);
+						console.log(response.data);
+				})
+		}
+		$scope.getRandom();
+})
 
 	.controller('searchController', function($scope,$rootScope,foodService){
 		$scope.getRecipe=function(e){
@@ -9,7 +19,6 @@ angular.module('myApp')
 			foodService.getNavSearch($scope.foodQuery)
 			.then(function (response){
 				console.log(response.data[0].title);
-
 			})
 
 		}
@@ -25,12 +34,6 @@ angular.module('myApp')
 		
 
 	// })
-	
-	// .controller('randomController', function($scope){
-	// 	$scope.getRandom=function(){
-	// 		foodService.getRandom()
-	// 			.then(function(response){
-	// 				console.log(response);
-	// 			})
+	// 	
 	// 	}
 	// })
