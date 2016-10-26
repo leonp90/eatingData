@@ -31,7 +31,17 @@
 </div>
 <hr>
 <nav class="navbar headBar" role="navigation">
-	<div class="container col-sm-4">
+	<div class="container col-sm-5">
+		<ul class="nav navbar-nav navbar-right">
+			<li ng-class="{ active: activetab == 'contact'}">
+				<a href="#/">Contact</a>
+			</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li ng-class="{ active: activetab == 'about'}">
+				<a href="#/">About</a>
+			</li>
+		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li ng-class="{ active: activetab == 'home'}">
 				<a href="#/">Home</a>
@@ -41,12 +51,12 @@
 
 
 
-	<form ng-controller="searchController" ng-submit="getRecipe($event)" class="form-group nav navbar-nav navbar-right searchRecipe col-md-5">
+	<form ng-controller="searchController" ng-submit="getRecipe($event)" class="form-group nav navbar-nav navbar-left searchRecipe col-md-5">
 		
 		<div class="col-sm-9">
 			<input ng-model="foodQuery" type="text" name="" id="input" class="form-control" placeholder="I'm feeling hungry" value="" required="required" title="">
 		</div>
-		<button type="submit" class="btn btn-default navbar-left col-md-2">Bake a search</button>
+		<a class="btn btn-default navbar-left col-md-2">Bake a search</a>
 	</form>
 </nav>
 <main>
@@ -56,12 +66,31 @@
 		</div>
 
 	</main> 
-
+<hr>
 	<footer>
+		
 		<div class="container">
-			<p>Copyright by @me</p>
+		<div class="row">
+			<div class="col-md-6">
+				<h2>Useful links</h2>
+				<ol>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ol>
+			</div>
+			<div class="col-md-6">
+				<h2>Contact Us!</h2>
+				
+                    
+            </div>
+
 		</div>
+	</div>
 	</footer>
+	
+
 
 
 
