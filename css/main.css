@@ -70,3 +70,9 @@ display: flex;
      position: relative !important;
      top: 50px !important;
   }
+
+body {
+    font-family: 'Georgia', sans-serif;
+   font-style: oblique;
+    font-weight: 300;
+}
