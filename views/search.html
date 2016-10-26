@@ -1,0 +1,12 @@
+<h2>{{title}}</h2>
+<div class="row rowA">
+    <div class="col-xs-2 moviesCont" ng-repeat="recipe in recipes">
+    
+        <img class="img-responsive" src="{{recipe.image_url}}" alt="">
+        <h3>{{recipe.title}}</h3>
+        <h4><a ng-model="url_details" href="{{recipe.url_details}}">More details..</a></h4>    
+    </div>
+
+</div>
+
+
