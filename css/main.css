@@ -54,3 +54,20 @@ display: flex;
      position: relative !important;
      top: 50px !important;
   }
+
+
+  .thumbnail_firstResults {
+    -webkit-box-shadow: -4px 51px 118px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: -4px 51px 118px 0px rgba(0,0,0,0.25);
+    box-shadow: -4px 51px 118px 0px rgba(0,0,0,0.25);
+    background-color:#F4F4F4;
+    margin: 0.8%
+    
+    
+  }
+
+  #button_firstResults {
+    background-color: #383838;
+    color : white;
+
+  }

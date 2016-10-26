@@ -35,15 +35,7 @@ angular.module('myApp')
 	}
 })
 
-<<<<<<< HEAD
-	.controller('searchController', function($scope,$rootScope,foodService){
-		$scope.getRecipe=function(e){
-			e.preventDefault();
-			foodService.getNavSearch($scope.foodQuery)
-			.then(function (response){
-				console.log(response.data[0].title);
-			})
-=======
+
 .controller('searchResults', function($scope,$rootScope,foodService){
 	$scope.getDetails=function(){
 		console.log("hola mundo");
@@ -62,7 +54,7 @@ angular.module('myApp')
 
 
 
->>>>>>> 407e601ee6f9c8ae295123c0a09de9a6d98a0270
+
 
 
 	// .controller('aboutController', function($scope){

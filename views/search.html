@@ -1,4 +1,4 @@
-<h2>{{title}}</h2>
+<!-- <h2>{{title}}</h2>
 <div class="row rowA">
     <div class="col-xs-2 moviesCont" ng-repeat="recipe in recipes">
     
@@ -7,6 +7,31 @@
         <h4><a ng-model="url_details" href="{{recipe.url_details}}">More details..</a></h4>    
     </div>
 
-</div>
+</div> -->
+
+
+		<!-- Page Header -->
+		
+		<!-- /.row -->
+
+		<!-- Projects Row -->
+		<div class="row">
+				<div class="col-md-4 portfolio-item thumbnail_firstResults" ng-repeat="recipe in recipes">
+				
+					<a><img class="img-responsive img-circle" src="{{recipe.image_url}}" alt=""></a>
+				
+				<h3>
+					<a href="#">{{recipe.title}}</a>
+				</h3>
+				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p> -->
+				<p><a id ="button_firstResults" href="#" class="btn btn-default" role="button">More details..</a></p>
+				</div>
+
+				
+
+		</div>
+
+	
+
 
 
