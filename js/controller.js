@@ -16,7 +16,7 @@ angular.module('myApp')
 		foodService.getDescription(recipeID)
 		.then(function(response){
 
-			console.log(response.data.recipe.description_text + "Hola");
+			console.log(response.data.recipe.description_text);
 		});
 	}
 
