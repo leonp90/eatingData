@@ -16,7 +16,7 @@ angular.module('myApp')
 		foodService.getDescription(recipeID)
 		.then(function(response){
 
-			console.log(response.data.recipe.description_text);
+			console.log(response.data.recipe.description_text + "Hola");
 		});
 	}
 
@@ -37,7 +37,8 @@ angular.module('myApp')
 
 
 .controller('searchResults', function($scope,$rootScope,foodService){
-	$scope.getDetails=function(){
+	$scope.getDetails=function(e){
+		e.preventDefault();
 		console.log("hola mundo");
 		
 	// 	foodService.getDescription($scope.url_details)
