@@ -12,11 +12,11 @@ angular.module('myApp')
 
 
 	$scope.getID = function() {
-		console.log(recipeID);	
+		// console.log(recipeID);	
 		foodService.getDescription(recipeID)
 		.then(function(response){
 
-			console.log(response.data.recipe.description_text);
+			// console.log(response.data.recipe.description_text);
 		});
 	}
 
@@ -25,46 +25,31 @@ angular.module('myApp')
 })
 
 .controller('searchController', function($scope,$rootScope,foodService, $location){
+	var idResults=[];
 	$scope.getRecipe=function(e){
 		e.preventDefault();
 		foodService.getNavSearch($scope.foodQuery)
 		.then(function (response){
+			console.log(response);
 			$rootScope.recipes=response.data;
+			console.log(response);
+			console.log($rootScope.recipes)
 		})
 		$location.path("/search")
 	}
+	// $scope.url_details=function(e){
+	// 	console.log("dafdsfa")
+	// 	e.preventDefault();
+	// 	foodService.getDescription($rootScope.recipeID)
+	// 	.then(function (response){
+	// 		console.log(response);
+	// 	});
+
+	// }
 })
 
-.controller('searchResults', function($scope,$rootScope,foodService){
-	$scope.getDetails=function(){
-		console.log("hola mundo");
-		
-	// 	foodService.getDescription($scope.url_details)
-	// .then(function (response){
-	// 	console.log(response);
-	// })
+// .controller('searchResults', function($scope,$rootScope,foodService){
 	
-	}
+// 	}
+// })
 
-
-
-
-})
-
-
-
-
-
-	// .controller('aboutController', function($scope){
-
-	// })
-	// .controller('contactController', function($scope){
-		
-	// })
-	// .controller('contactController', function($scope){
-		
-
-	// })
-	// 	
-	// 	}
-	// })
