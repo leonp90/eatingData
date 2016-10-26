@@ -49,6 +49,7 @@ display: flex;
   display: flex;
   flex-wrap: nowrap;
 }
+
 .img-responsive {
   margin: 0 auto;
   max-height: 100px%;

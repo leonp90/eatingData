@@ -29,9 +29,10 @@
 		
 	</div>
 </div>
-<nav class="navbar navbar-inverse" role="navigation">
+<hr>
+<nav class="navbar headBar" role="navigation">
 	<div class="container col-sm-4">
-		<ul class="nav navbar-nav">
+		<ul class="nav navbar-nav navbar-right">
 			<li ng-class="{ active: activetab == 'home'}">
 				<a href="#/">Home</a>
 			</li>
@@ -40,12 +41,12 @@
 
 
 
-	<form ng-controller="searchController" ng-submit="getRecipe($event)" class="form-group nav navbar-nav navbar-right searchRecipe">
+	<form ng-controller="searchController" ng-submit="getRecipe($event)" class="form-group nav navbar-nav navbar-right searchRecipe col-md-5">
 		
-		<div class="col-sm-4">
+		<div class="col-sm-9">
 			<input ng-model="foodQuery" type="text" name="" id="input" class="form-control" placeholder="I'm feeling hungry" value="" required="required" title="">
 		</div>
-		<button type="submit" class="btn btn-default">Bake a search</button>
+		<button type="submit" class="btn btn-default navbar-left col-md-2">Bake a search</button>
 	</form>
 </nav>
 <main>
