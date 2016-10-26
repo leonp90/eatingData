@@ -80,3 +80,9 @@ body {
    font-style: oblique;
     font-weight: 300;
 }
+
+.textarea-style{
+  margin-top:4px; 
+  width:70px; 
+  height:40px
+}
