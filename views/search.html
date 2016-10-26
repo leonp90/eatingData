@@ -1,12 +1,12 @@
 <h2>{{title}}</h2>
-<div class="row rowA">
+<div ng-controller="searchResults" class="row rowA">
     <div class="col-xs-2 moviesCont" ng-repeat="recipe in recipes">
     
         <img class="img-responsive" src="{{recipe.image_url}}" alt="">
         <h3>{{recipe.title}}</h3>
-        <h4><a ng-model="url_details" href="{{recipe.url_details}}">More details..</a></h4>    
+        <!-- <h3>{{recipe.url_details}}</h3> -->
+        <!-- <h4><a ng-click="url_details" value="{{recipe.url_details}}">More details..</a></h4> -->
+        <button ng-click="url_details(recipe.url_details)" type="button" class="btn btn-default">See more..</button>    
     </div>
-
 </div>
-
-
+ 
