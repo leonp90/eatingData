@@ -1,48 +1,12 @@
-<<<<<<< HEAD
-<!-- <h2>{{title}}</h2>
-<div class="row rowA">
-=======
 <h2>{{title}}</h2>
-
-<div  class="row rowA">
->>>>>>> 1dd9bcfeafc36ae37cc2df2e81d5504ae72ea4f7
+<div class="row rowA">
     <div class="col-xs-2 moviesCont" ng-repeat="recipe in recipes">
     
         <img class="img-responsive" src="{{recipe.image_url}}" alt="">
         <h3>{{recipe.title}}</h3>
-        <!-- <h4><a ng-click="url_details" value="{{recipe.url_details}}">More details..</a></h4> -->
-        <button ng-model="recipeID"  ng-click="url_details ($event)" type="button" value="{{recipe.recipe_id}}" class="btn btn-default">See more..</button>    
+        <h4><a ng-model="url_details" href="{{recipe.url_details}}">More details..</a></h4>    
     </div>
 
-</div> -->
-
-
-		<!-- Page Header -->
-		
-		<!-- /.row -->
-
-		<!-- Projects Row -->
-		<div class="row">
-				<div class="col-md-4 portfolio-item thumbnail_firstResults" ng-repeat="recipe in recipes">
-				
-					<a><img class="img-responsive img-circle" src="{{recipe.image_url}}" alt=""></a>
-				
-				<h3>
-					<a href="#">{{recipe.title}}</a>
-				</h3>
-				<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p> -->
-				<p ng-click="getDetails($event)" ><a id ="button_firstResults" href="#" class="btn btn-default" role="button">More details..</a></p>
-				</div>
-
-				
-
-		</div>
-
-	
-
-
-
-
-  <button type="button" class="btn btn-default">See more..</button>
-
 </div>
+
+
