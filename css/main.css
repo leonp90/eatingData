@@ -103,3 +103,11 @@ body>main{
   height:40px
 }
 
+#about-img{
+  margin-bottom: 30px ;
+  border-radius: 5px ;
+}
+
+#about-last-paragraph{
+  text-align: center !important;
+}
