@@ -1,9 +1,19 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+ * a:visited{
+  color: black;
 }
 .navbar-fixed-top {
   position:absolute;
   top:100px;
+}
+body>main{
+    background-image: url("/images/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
 }
 .logoHead{
   font-size: 6vh;
@@ -32,16 +42,7 @@ body{
  position: fixed;
  top:0;
 }
-.carousel{
-  background: #2f4357;
-  margin-top: 20px;
-}
-.carousel-inner>.item>img{
-  margin: 0 auto ;/* Align slide image horizontally center */
-}
-.carousel-inner>.active{
-  margin: 0 auto ;/* Align slide image horizontally center */
-}
+
 .courses{
 /*	display: flex;
 	flex-wrap: wrap;
@@ -101,3 +102,4 @@ body{
   width:70px; 
   height:40px
 }
+
