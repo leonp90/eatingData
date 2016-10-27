@@ -185,3 +185,8 @@ right: -3px;
   text-decoration: underline !important;
 }
 
+ #det-background {
+  background-color: white !important;
+  opacity: 0.8 !important;
+}
+

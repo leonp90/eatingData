@@ -25,8 +25,7 @@ angular.module('myApp', ['ngRoute'])
 				controller: 'searchResults'
 				
 			})
-
-			
+		
 			.otherwise({redirectTo: '/'});
 			
 
