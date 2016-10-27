@@ -149,3 +149,24 @@ div .jumbotron{
   margin-top: 8px !important;
 }
 
+.flex_search{
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0px 30px 0px;
+}
+
+.img-thumbnail{
+  width: 300px;
+  height: 200px;
+}
+
+h4.search{
+  max-width: 210px;
+  color: #333333;
+}
+
+figure.search{
+  margin:10px 10px 10px 10px;
+}
