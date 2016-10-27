@@ -145,6 +145,10 @@ div .jumbotron{
   float: right;
   clear: none;
 }
+#about-sign{
+  border-bottom: 2px solid;
+  border-radius: 10px;
+}
 .quoteJson{
   text-align: right;
 }
