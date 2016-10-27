@@ -37,6 +37,7 @@ footer ul{
 .contactForm{
   padding-top: 5%;
   padding-bottom: 5%;
+  opacity: 0.8;
 }
 
 .logoHead{
@@ -130,12 +131,5 @@ div .jumbotron{
 .contact-input{
   text-align: left;
   margin: 5px 0 5px 0;
-}
-
-.btn-default{
-  color: #ffffff; 
-  background-color: #30AB51; 
-  border-color: #39B839; 
-  margin-top: 8px !important;
 }
 
