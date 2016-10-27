@@ -68,11 +68,15 @@ footer ul{
   flex-wrap: nowrap;
 }
 
-div .jumbotron{
+#details-view{
+  margin-top: 15px;
+}
+
+/*div .jumbotron{
   max-height: 400px;
   padding-bottom: 40px;
   overflow: hidden;
-}
+}*/
 
 .img-responsive {
   margin: 0 auto;
@@ -83,6 +87,8 @@ div .jumbotron{
 .img-rounded {
   border-radius: 50%;
 }
+.recipe-img{
+  padding: 13% 0;}
 
 }
 .affix {
@@ -160,8 +166,34 @@ div .jumbotron{
 /* Firefox */
 -moz-transform: rotate(-25deg);
 
+
 /* IE */
 -ms-transform: rotate(-25deg);
+}
+
+
+.flex_search {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin:-60px;
+  overflow: hidden;
+
+  }
+
+.img-thumbnail{
+  width: 300px;
+  height: 200px;
+}
+
+h4.search{
+  max-width: 210px;
+  color: #333333;
+}
+
+figure.search{
+  margin:10px 10px 10px 10px;
 
 /* Opera */
 -o-transform: rotate(-25deg);
@@ -172,4 +204,10 @@ filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 position: relative;
 top: 200px;
 right: -3px;
+
 }
+
+.page-header ~ h4{
+  text-decoration: underline !important;
+}
+
