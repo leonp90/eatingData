@@ -1,32 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-    
 <div>
     <div class="jumbotron">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <img id=" " class="img-responsive" src="../css/beef.jpg">
+                    <img id=" " class="img-responsive" src="{{recipe.image_url}}">
+                    <p>{{recipe.image_url}}</p>
 
                 </div>
                 <div class="col-md-12">
-                 <h1 class="page-header">TITLE{{TITLE}}
-                    <small>Do it yourself</small>
+                 <h1 class="page-header">{{recipe.title}} 
+                    <!-- <small>Do it yourself</small> -->
                 </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum magnam sit amet deserunt, aliquid facere similique animi temporibus doloremque ex odio dolores quam, provident quis libero eos mollitia? Hic, mollitia.</p> 
+                <h4> Description text</h4>
+                <p>{{recipe.description_text}}</p> 
+                <h4> Ingredients : </h4>
+                <ul>
+                    <li ng-repeat="ingredient in ingredients">{{ingredient}}</li>
+                </ul>
             </div>
         </div>
     </div>         
 </div>
 </div>
-</body>
-</html>
 
 
 

@@ -20,10 +20,11 @@ angular.module('myApp', ['ngRoute'])
 				controller:'searchController'
 			})
 
-			// .when('/detail', {
-			// 	templateUrl:'views/detail.html',
+			.when('/detail', {
+				templateUrl:'views/detail.html',
+				controller: 'searchResults'
 				
-			// })
+			})
 
 			
 			.otherwise({redirectTo: '/'});
