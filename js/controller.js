@@ -12,6 +12,11 @@ angular.module('myApp')
     $scope.getID = function() { 
         foodService.getDescription(recipeID)
         .then(function(response){
+            console.log(response);
+            $scope.recipeDescription=response.data.recipe.description_text;
+            
+            
+
         });
     }
 })

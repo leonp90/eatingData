@@ -21,34 +21,39 @@
 					<h2>Favorites</h2>
 					<p>Now that there is the Tec-9, a crappy spray gun from South Miami. This gun is advertised as the most popular gun in American crime.</p>
 					
-					</div>
 				</div>
+			</div>
 			
 		</div> 
-</div>
+	</div>
 </div>
 
 
-		<hr><!-- it draws a line -->
+<hr><!-- it draws a line -->
+<div class="container">
+	<div class="jumbotron">
 		<div class="container">
-			<div class="jumbotron">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<img class="img-responsive" src="{{recipeImg}}">
-					</div>
-					<div class="col-md-6">
-						<h3>{{recipeTitle}}</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum magnam sit amet deserunt, aliquid facere similique animi temporibus doloremque ex odio dolores quam, provident quis libero eos mollitia? Hic, mollitia.</p> 
+			<div class="row">
+				<div class="col-md-6">
+					<img class="img-responsive" src="{{recipeImg}}">
+				</div>
+				<div class="col-md-6">
+					<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+						<div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingOne">
+								<h4 class="panel-title">
+									<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">{{recipeTitle}}
+									</a>
+								</h4>
+							</div>
+							<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+								<div class="panel-body">
+									<p>{{recipeDescription}}</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>         
 		</div>
-		</div>
-		
-
-
-
-
-
-
+	</div>
