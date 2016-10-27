@@ -35,5 +35,6 @@ angular.module('myApp')
             .then(function (response){
                 console.log(response);
             })
+            $location.path("/detail")
     }
 })
