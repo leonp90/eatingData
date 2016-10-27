@@ -1,9 +1,19 @@
 body{
   font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+ * a:visited{
+  color: black;
 }
 .navbar-fixed-top {
   position:absolute;
   top:100px;
+}
+body>main{
+    background-image: url("/images/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
 }
 .logoHead{
   font-size: 6vh;
