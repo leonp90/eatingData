@@ -130,7 +130,9 @@ footer ul{
 }
 
 #about-last-paragraph{
-  text-align: center !important;
+  text-align: right;
+  font-family: 'Pinyon Script', cursive;
+  font-size: 10vh;
 }
 
 
@@ -138,7 +140,48 @@ footer ul{
   text-align: left;
   margin: 5px 0 5px 0;
 }
+.aboutCont{
+  background-image:  url('/images/chef.jpeg');
+  background-size: cover;
+  padding: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: white;
+  text-shadow: 2px 2px black;
+  float: right;
+  clear: none;
+}
+#about-sign{
+  border-bottom: 2px solid;
+  border-radius: 10px;
+}
+.quoteJson{
+  text-align: right;
+}
+.rotate {
+
+/* Safari */
+-webkit-transform: rotate(-25deg);
+
+/* Firefox */
+-moz-transform: rotate(-25deg);
+
+
+/* IE */
+-ms-transform: rotate(-25deg);
+
+/* Opera */
+-o-transform: rotate(-25deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+position: relative;
+top: 200px;
+right: -3px;
+}
 
 .page-header ~ h4{
   text-decoration: underline !important;
 }
+
