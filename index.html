@@ -50,10 +50,12 @@
 			</ul>
 		</div>
 			<div class="col-sm-6 nav navbar-nav navbar-right searchRecipe ">
-			<form ng-controller="searchController" ng-submit="getRecipe($event)" class="form-group">
+			<form ng-controller="searchController" ng-submit="getRecipe($event)" class="form-group navbar-form navbar-left">
+				<div class="form-group">
 					<input ng-model="foodQuery" type="text" name="" id="input" class="form-control" placeholder="I'm feeling hungry" value="" required="required" title="">
+					</div>
+					<button class="btn btn-default">Bake a search</button>
 				</form>
-					<button class="btn btn-default navbar-right">Bake a search</button>
 			</div>
 
 	</nav>
@@ -100,7 +102,7 @@
 					<h3>Follow Us!</h3>
 				</div>
 				<div class="favsocial">
-					<div><a href="">
+					<div><a href="https://www.facebook.com/jsonkitchen/">
 						<img id="face" class="img-responsive" src="images/facebook.svg" alt="Facebook">
 					</a></div>
 
