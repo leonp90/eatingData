@@ -6,7 +6,7 @@ angular.module('myApp')
 		}
 		
 		function getDescription(recipeID){
-			var url = "https://powerful-inlet-75906.herokuapp.com/" + recipeID;
+			var url = "https://powerful-inlet-75906.herokuapp.com" + recipeID;
 			return $http.get(url);
 		}
 
