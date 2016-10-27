@@ -68,11 +68,15 @@ footer ul{
   flex-wrap: nowrap;
 }
 
-div .jumbotron{
+#details-view{
+  margin-top: 15px;
+}
+
+/*div .jumbotron{
   max-height: 400px;
   padding-bottom: 40px;
   overflow: hidden;
-}
+}*/
 
 .img-responsive {
   margin: 0 auto;
@@ -83,6 +87,8 @@ div .jumbotron{
 .img-rounded {
   border-radius: 50%;
 }
+.recipe-img{
+  padding: 13% 0;}
 
 }
 .affix {
@@ -133,3 +139,6 @@ div .jumbotron{
   margin: 5px 0 5px 0;
 }
 
+.page-header ~ h4{
+  text-decoration: underline !important;
+}
