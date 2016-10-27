@@ -30,75 +30,104 @@
 	</div>
 </div>
 <hr>
-<nav class="navbar headBar" role="navigation">
-	<div class="container col-sm-5">
-		<ul class="nav navbar-nav navbar-right">
-			<li ng-class="{ active: activetab == 'contact'}">
-				<a href="#/">Contact</a>
-			</li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li ng-class="{ active: activetab == 'about'}">
-				<a href="#/about">About</a>
-			</li>
-		</ul>
-		<ul class="nav navbar-nav navbar-right">
-			<li ng-class="{ active: activetab == 'home'}">
-				<a href="#/contact">Home</a>
-			</li>
-		</ul>
-	</div>
-
-
-
-	<form ng-controller="searchController" ng-submit="getRecipe($event)" class="form-group nav navbar-nav navbar-left searchRecipe col-md-5">
-		
-		<div class="col-sm-9">
-			<input ng-model="foodQuery" type="text" name="" id="input" class="form-control" placeholder="I'm feeling hungry" value="" required="required" title="">
+<div class="container">
+	<nav class="navbar headBar" role="navigation">
+		<div class="container col-sm-6">
+			<ul class="nav navbar-nav navbar-left">
+				<li ng-class="{ active: activetab == 'home'}">
+					<a href="#/contact">Home</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-left">
+				<li ng-class="{ active: activetab == 'about'}">
+					<a href="#/about">About</a>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-left">
+				<li ng-class="{ active: activetab == 'contact'}">
+					<a href="#/">Contact</a>
+				</li>
+			</ul>
 		</div>
-		<a class="btn btn-default navbar-left col-md-2">Bake a search</a>
-	</form>
-</nav>
+			<div class="col-sm-6 nav navbar-nav navbar-right searchRecipe ">
+			<form ng-controller="searchController" ng-submit="getRecipe($event)" class="form-group">
+					<input ng-model="foodQuery" type="text" name="" id="input" class="form-control" placeholder="I'm feeling hungry" value="" required="required" title="">
+				</form>
+					<button class="btn btn-default navbar-right">Bake a search</button>
+			</div>
+
+	</nav>
+</div>
+
 <main>
 	<!-- falta poner links a imagenes y titulos  -->
-		<div class="container-fluid bodyCont">
-			<ng-view></ng-view>
-		</div>
+	<div class="container-fluid bodyCont">
+		<ng-view></ng-view>
+	</div>
 
-	</main> 
+</main> 
 <hr>
-	<footer>
-		
-		<div class="container">
-		<div class="row">
-			<div class="col-md-6">
-				<h2>Useful links</h2>
-				<ol>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-				</ol>
-			</div>
-			<div class="col-md-6">
-				<h2>Contact Us!</h2>
+<footer>
+	<div class="container">
+		<div class="col-md-12">
+			<div class="col-sm-4">
+				<div>
+					<h2>Useful links</h2>
+				</div>
+				<div>
+					<ul>
+						<li>Granny's Recipe</li>
+						<li>Coolest Courses Ever</li>
+						<li>Mamma's Kitchen</li>
+						<li>Burning My Dish</li>
+					</ul>
+				</div>
 				
-                    
-            </div>
+			</div>
+			<div class="col-sm-4">
+				<div><h2>JSON Blog</h2></div>
+				<div><ul>
+					<li>Granny's Recipe</li>
+					<li>Coolest Courses Ever</li>
+					<li>Mamma's Kitchen</li>
+					<li>Burning My Dish</li>
+				</ul></div>
+				
+				
+			</div>
+			<div class="col-sm-4">
+				<div>
+					<h3>Follow Us!</h3>
+				</div>
+				<div class="favsocial">
+					<div><a href="">
+						<img id="face" class="img-responsive" src="images/facebook.svg" alt="Facebook">
+					</a></div>
 
+
+					<div><a href="" alt="Instagram">
+						<img id="insta"class="img-responsive" src="images/instagram.png">
+					</a>
+				</div>
+			</div>
+
+			<h4>
+				<a href="mailto:json@jsonkitchen.com" target="_top">Send us and email</a>
+			</h4>
 		</div>
 	</div>
-	</footer>
-	
+</div>
 
 
 
 
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
-	<script src="js/app.js"></script>
-	<script src="js/controller.js"></script>
-	<script src="js/service.js"></script>
+
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+<script src="js/app.js"></script>
+<script src="js/controller.js"></script>
+<script src="js/service.js"></script>
 </body>
 </html>
 
