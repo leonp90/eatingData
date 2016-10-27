@@ -9,6 +9,7 @@ a:visited, a:link, a:active{
 .navbar-fixed-top {
   position:absolute;
   top:100px;
+
 }
 body>main{
   background-image: url("/images/main.jpg");
@@ -33,6 +34,10 @@ footer ul{
   padding: 0px;
   display: inline-flex;
 }
+.contactForm{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
 
 .logoHead{
   font-size: 6vh;
@@ -43,29 +48,14 @@ footer ul{
 .headBar {
   text-decoration: none;
 }
-::-webkit-input-placeholder { /* WebKit browsers */
-  direction: rtl;
-}
 
 .logoLegend{
   font-size: 3vh;
   padding-bottom:  15px;
   padding-top: 0px;
 }
-.searchRecipe{
-  margin-top: 10px;
-}
-.navbar-fixed-top.ui-scrollfix {
- position: fixed;
- top:0;
-}
-
 .courses{
-/*	display: flex;
-	flex-wrap: wrap;
-	margin:10px;*/
   max-width: 1140px;
-  /*  margin: 30px;*/
   display: flex;
 }
 .courses {
