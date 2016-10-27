@@ -9,6 +9,7 @@
 
 	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 
 
@@ -35,7 +36,7 @@
 		<div class="container col-sm-6">
 			<ul class="nav navbar-nav navbar-left">
 				<li ng-class="{ active: activetab == 'home'}">
-					<a href="#/contact">Home</a>
+					<a href="#/">Home</a>
 				</li>
 			</ul>
 			<ul class="nav navbar-nav navbar-left">
@@ -45,12 +46,12 @@
 			</ul>
 			<ul class="nav navbar-nav navbar-left">
 				<li ng-class="{ active: activetab == 'contact'}">
-					<a href="#/">Contact</a>
+					<a href="#/contact">Contact</a>
 				</li>
 			</ul>
 		</div>
 			<div class="col-sm-6 nav navbar-nav navbar-right searchRecipe ">
-			<form ng-controller="searchController" ng-submit="getRecipe($event)" class="form-group navbar-form navbar-left">
+			<form ng-controller="searchController" ng-submit="getRecipe($event)" class="form-group navbar-form navbar-right">
 				<div class="form-group">
 					<input ng-model="foodQuery" type="text" name="" id="input" class="form-control" placeholder="I'm feeling hungry" value="" required="required" title="">
 					</div>

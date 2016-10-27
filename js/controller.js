@@ -38,10 +38,12 @@ angular.module('myApp')
     $scope.url_details = function( recipeUrl ){
         foodService.getDescription(recipeUrl)
             .then(function (response){
-            $rootScope.recipe=response.data.recipe;
-            
-            $rootScope.ingredients= response.data.recipe.ingredients;
+                            console.log(response);
 
+            $rootScope.recipe=response.data;
+            console.log($rootScope.recipe);
+            $rootScope.ingredients= response.data.ingredientLines;
+            console.log($rootScope.ingredients);
               
             })
             $location.path("/detail")
