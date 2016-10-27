@@ -11,11 +11,11 @@ a:visited, a:link, a:active{
   top:100px;
 
 }
-body>main{
-  background-image: url("/images/main.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.8;
+body>main{  
+    background-image: url("/images/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
 }
 footer{
     font-size: 1.5vh;
@@ -124,5 +124,18 @@ div .jumbotron{
 
 #about-last-paragraph{
   text-align: center !important;
+}
+
+
+.contact-input{
+  text-align: left;
+  margin: 5px 0 5px 0;
+}
+
+.btn-default{
+  color: #ffffff; 
+  background-color: #30AB51; 
+  border-color: #39B839; 
+  margin-top: 8px !important;
 }
 
