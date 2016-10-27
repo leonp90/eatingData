@@ -1,5 +1,5 @@
 angular.module('myApp')
-.controller('homeController', function($scope, foodService){
+.controller('homeController', function($scope, foodService, $location){
     var random = Math.floor(Math.random() * (30 - 1) + 1);
     var recipeID= "";
     foodService.getRandom()
@@ -17,10 +17,7 @@ angular.module('myApp')
             $scope.recipeDescription=response.data.recipe.description_text;
         });
     }
-    $scope.expand=function(e){
-        e.preventDefault();
-    }
-
+      
 })
 .controller('searchController', function($scope,$rootScope,foodService, $location){
     $scope.getRecipe=function(e){
