@@ -14,11 +14,12 @@ angular.module('myApp')
         .then(function(response){
             console.log(response);
             $scope.recipeDescription=response.data.recipe.description_text;
-            
-            
-
         });
     }
+    $scope.expand=function(e){
+        e.preventDefault();
+    }
+
 })
 .controller('searchController', function($scope,$rootScope,foodService, $location){
     $scope.getRecipe=function(e){

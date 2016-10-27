@@ -103,4 +103,8 @@ body>main{
   height:40px
 }
 
+.panel-group{
+  float: right;
+}
+
 
