@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" ng-app ="myApp">
 <head>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<title>Angular Food</title>
 	<!-- Latest compiled and minified CSS & JS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -39,12 +39,12 @@
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li ng-class="{ active: activetab == 'about'}">
-				<a href="#/">About</a>
+				<a href="#/about">About</a>
 			</li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li ng-class="{ active: activetab == 'home'}">
-				<a href="#/">Home</a>
+				<a href="#/contact">Home</a>
 			</li>
 		</ul>
 	</div>
@@ -61,7 +61,7 @@
 </nav>
 <main>
 	<!-- falta poner links a imagenes y titulos  -->
-		<div class="container-fluid">
+		<div class="container-fluid bodyCont">
 			<ng-view></ng-view>
 		</div>
 

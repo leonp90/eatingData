@@ -26,20 +26,22 @@ angular.module('myApp')
         e.preventDefault();
         foodService.getNavSearch($scope.foodQuery)
         .then(function (response){
-            console.log(response);
+            // console.log(response);
             $rootScope.recipes=response.data;
-            console.log(response);
+            // console.log(response);
         })
         $location.path("/search")
     }
 })
-.controller('searchResults', function($scope,$rootScope,foodService){
-    //console.log($rootScope.recipes[0])
+.controller('searchResults', function($scope,$rootScope,foodService,$location){
     $scope.url_details = function( recipeUrl ){
-        console.log(recipeUrl)
         foodService.getDescription(recipeUrl)
             .then(function (response){
-                console.log(response);
+            $rootScope.recipe=response.data.recipe;
+            
+            $rootScope.ingredients= response.data.recipe.ingredients;
+
+              
             })
             $location.path("/detail")
     }

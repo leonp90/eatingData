@@ -60,6 +60,12 @@ body>main{
   flex-wrap: nowrap;
 }
 
+div .jumbotron{
+  max-height: 400px;
+  padding-bottom: 40px;
+  overflow: hidden;
+}
+
 .img-responsive {
   margin: 0 auto;
   max-height: 100px%;
@@ -103,8 +109,13 @@ body>main{
   height:40px
 }
 
-.panel-group{
-  float: right;
+
+#about-img{
+  margin-bottom: 30px ;
+  border-radius: 5px ;
 }
 
+#about-last-paragraph{
+  text-align: center !important;
+}
 
