@@ -245,6 +245,7 @@ right: -3px;
 }
  #det-background {
   margin-top: 4%;
+  margin-bottom: 4%;
   background-color: white !important;
   opacity: 0.8 !important;
 }
