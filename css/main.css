@@ -42,6 +42,9 @@ body>main{
  position: fixed;
  top:0;
 }
+.btn .btn-default {
+  white-space: nowrap;
+}
 
 .courses{
 /*	display: flex;
