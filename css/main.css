@@ -230,3 +230,7 @@ right: -3px;
   width: 270px;
   height: 160px;
 }
+ #det-background {
+  background-color: white !important;
+  opacity: 0.8 !important;
+}
