@@ -12,11 +12,19 @@ a:visited, a:link, a:active{
   top:100px;
 }
 .randomText{
-  font-size: 2vh !important;
-  padding-left: 10px;
+  font-size: 1.5vh !important;
+  padding-left: 20px;
+  line-height: 10px;
 }
 .randJumbo{
   opacity: 0.9;
+}
+.titleRand{
+  font-family: 'Pinyon Script', cursive;
+  font-size: 5vh;
+  font-weight: bolder;
+  border-bottom: 1px solid black;
+
 }
 body>main{  
     background-image: url("/images/main.jpg");
@@ -25,7 +33,7 @@ body>main{
     opacity: 0.8;
 }
 .randJumbImg{
-  padding-top: 10%;
+  padding-top: 4%;
 }
 footer{
     font-size: 1.5vh;
@@ -218,10 +226,6 @@ figure.search{
 /* Internet Explorer */
 filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
-position: relative;
-top: 200px;
-right: -3px;
-
 }
 
 .page-header ~ h4{
@@ -249,4 +253,12 @@ right: -3px;
   padding: 0 60px 20px 60px;
   background-color: white !important;
   opacity: 0.8 !important;
+}
+/*.titleRecipeJum{
+  border-bottom: 1px solid black;
+}*/
+.titleRecipeJum>h4{
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }

@@ -34,13 +34,14 @@
 		<div class="container">
 			<div class="jumbotron randJumbo">
 			<div class="container">
+				<h2 class="titleRand" >Recipe of the Week</h2>
 				<div class="row">
 					<div class="randJumbImg col-md-4">
 						<img class="img-responsive" src="images/cooking.jpg">
 					</div>
 					<div class="col-md-8 detail-background">
-						<h2 class="page-header">{{randRecip.title}}</h2>
-						<h3>Ingredients:</h3>
+						<h3 class="titleRecipeJum page-header">{{randRecip.title}}</h3>
+						<h4>Ingredients:</h4>
 						<p class="randomText" ng-repeat="recetas in randIngred">{{recetas}}</p>
 						<button class="btn btn-default "><a href="{{randRecip.publisher_url}}">Author link!</a></button> 
 					</div>
