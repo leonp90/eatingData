@@ -88,7 +88,8 @@ footer ul{
   border-radius: 50%;
 }
 .recipe-img{
-  padding: 13% 0;}
+  margin-top: 12.9%; 
+}
 
 }
 .affix {
@@ -172,17 +173,20 @@ footer ul{
 }
 
 
-.flex_search {
+/*.flex_search {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
   margin:-60px;
-  overflow: hidden;
 
+  }*/
+
+
+  .searchResults{
+    padding-top: 5%;
   }
-
-.img-thumbnail{
+/*.img-thumbnail{
   width: 300px;
   height: 200px;
 }
@@ -193,7 +197,7 @@ h4.search{
 }
 
 figure.search{
-  margin:10px 10px 10px 10px;
+  margin:10px 10px 10px 10px;*/
 
 /* Opera */
 -o-transform: rotate(-25deg);
@@ -211,3 +215,18 @@ right: -3px;
   text-decoration: underline !important;
 }
 
+.rowA{
+    display: flex;
+  flex-wrap: wrap;
+}
+.foodDetCont{
+  display: inline-block;
+  padding: 10px;
+  max-width: 300px;
+  min-height: 400px;
+
+}
+.searchPhoto{
+  width: 270px;
+  height: 160px;
+}
