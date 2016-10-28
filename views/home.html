@@ -32,15 +32,17 @@
 
 		<hr><!-- it draws a line -->
 		<div class="container">
-			<div class="jumbotron">
+			<div class="jumbotron randJumbo">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6">
-						<img class="img-responsive" src="{{recipeImg}}">
+					<div class="randJumbImg col-md-4">
+						<img class="img-responsive" src="images/cooking.jpg">
 					</div>
-					<div class="col-md-6">
-						<a>{{recipeTitle}}</a>
-						<p>{{recipeDescription}}</p> 
+					<div class="col-md-8 detail-background">
+						<h2 class="page-header">{{randRecip.title}}</h2>
+						<h3>Ingredients:</h3>
+						<p class="randomText" ng-repeat="recetas in randIngred">{{recetas}}</p>
+						<button class="btn btn-default "><a href="{{randRecip.publisher_url}}">Author link!</a></button> 
 					</div>
 				</div>
 			</div>         

@@ -4,6 +4,9 @@ angular.module('myApp')
 		function getRandom(){
 			return $http.get("https://powerful-inlet-75906.herokuapp.com/food2fork/recipe");
 		}
+		function getRandDescription(recipeID){
+			return $http.get("https://powerful-inlet-75906.herokuapp.com/food2fork" + recipeID);
+		}
 		
 		function getDescription(recipeID){
 			var url = "https://powerful-inlet-75906.herokuapp.com" + recipeID;
@@ -17,7 +20,8 @@ angular.module('myApp')
 		return {
 			getRandom: getRandom,
 			getDescription: getDescription,
-			getNavSearch: getNavSearch
+			getNavSearch: getNavSearch,
+			getRandDescription: getRandDescription
 		}
 
 	})
